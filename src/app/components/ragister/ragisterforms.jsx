@@ -1,0 +1,237 @@
+export default function RegisterLeftContent() {
+    return (
+
+        <div className="flex flex-col ">
+
+
+            <div className="flex flex-col w-[715px] gap-4 mb-8" style={{ marginBottom: '50px' }}>
+                <div
+                    className="text-[#01295A] font-mulish font-semibold text-[26px] leading-none tracking-normal"
+                    style={{ lineHeight: '1', fontFamily: 'Mulish, sans-serif' }}
+                >
+                    Register for Swachhatha
+                </div>
+                <div
+                    className="font-extrabold text-[60px] leading-none tracking-normal w-[538px]   capitalize font-mulish"
+                    style={{ color: '#039123', fontFamily: 'Mulish, sans-serif' }}
+                >
+                    Green Leaf Rating
+                </div>
+
+                <div
+                    className="text-[#01295A] font-mulish font-semibold text-[26px] leading-none tracking-normal"
+                    style={{ lineHeight: '1', fontFamily: 'Mulish, sans-serif' }}
+                >
+                    in Hospitality Facilities
+                </div>
+
+            </div>
+
+            <div className="flex flex-col w-[715px] gap-4 " >
+                <div
+                    className="text-gray-700 text-sm font-medium leading-none tracking-normal align-middle"
+                    style={{ fontFamily: 'Mulish, sans-serif', fontSize: '14px', lineHeight: '1', marginBottom: "20px" }}
+                >
+                    Certified in Four Steps
+                </div>
+
+                <div className="flex flex-row space-x-12 ">
+
+                    <div className="flex flex-col items-center text-center">
+                        {/* <div className="text-blue-500 text-3xl mb-2"><img src="/Group110.png" alt="File Icon" /></div> */}
+                        <div className="relative inline-block text-blue-500 text-3xl mb-2">
+                            <img src="/Group110.png" alt="File Icon" className="inline-block" />
+
+
+                            <div
+                                className="absolute font-mulish font-normal leading-none tracking-normal flex items-center justify-center text-white pointer-events-none"
+                                style={{
+                                    left: '-12px',
+                                    top: '0%',
+                                    width: '16px',
+                                    height: '33px',
+                                    fontSize: '26px',
+                                    color: 'rgba(2, 64, 91, 0.15)',
+                                    textAlign: 'center'
+                                }}
+                            >
+                                1
+                            </div>
+                        </div>
+                        <span className="font-mulish font-medium text-lg leading-none tracking-normal text-center align-middle text-gray-700">Self Assessment</span>
+                    </div>
+                    <div className="flex flex-col items-center text-center">
+                        {/* <div className="text-green-500 text-3xl mb-2"><img src="/reviewicon.png" alt="File Icon" /></div> */}
+                        <div className="relative inline-block text-blue-500 text-3xl mb-2">
+                            <img src="/reviewicon.png" alt="File Icon" className="inline-block" />
+
+
+                            <div
+                                className="absolute font-mulish font-normal leading-none tracking-normal flex items-center justify-center text-white pointer-events-none"
+                                style={{
+                                    left: '-12px',
+                                    top: '0%',
+                                    width: '16px',
+                                    height: '33px',
+                                    fontSize: '26px',
+                                    color: 'rgba(2, 64, 91, 0.15)',
+                                    textAlign: 'center'
+                                }}
+                            >
+                                2
+                            </div>
+                        </div>
+                        <span className="font-mulish font-medium text-lg leading-none tracking-normal text-center align-middle text-gray-700">Approval</span>
+                    </div>
+                    <div className="flex flex-col items-center text-center">
+                        {/* <div className="text-purple-500 text-3xl mb-2"><img src="/approvelicon.png" alt="File Icon" /></div> */}
+                        <div className="relative inline-block text-blue-500 text-3xl mb-2">
+                            <img src="/approvelicon.png" alt="File Icon" className="inline-block" />
+
+
+                            <div
+                                className="absolute font-mulish font-normal leading-none tracking-normal flex items-center justify-center text-white pointer-events-none"
+                                style={{
+                                    left: '-12px',
+                                    top: '0%',
+                                    width: '16px',
+                                    height: '33px',
+                                    fontSize: '26px',
+                                    color: 'rgba(2, 64, 91, 0.15)',
+                                    textAlign: 'center'
+                                }}
+                            >
+                                3
+                            </div>
+                        </div>
+                        <span
+                            className="font-mulish font-medium text-lg leading-none tracking-normal text-center align-middle text-gray-700"
+                        >
+                            Approval
+                        </span>
+                    </div>
+                    <div className="flex flex-col items-center text-center">
+                        {/* <div className="text-purple-500 text-3xl mb-2"><img src="/certificationicon.png" alt="File Icon" /></div> */}
+                        <div className="relative inline-block text-blue-500 text-3xl mb-2">
+                            <img src="/certificationicon.png" alt="File Icon" className="inline-block" />
+
+
+                            <div
+                                className="absolute font-mulish font-normal leading-none tracking-normal flex items-center justify-center text-white pointer-events-none"
+                                style={{
+                                    left: '-12px',
+                                    top: '0%',
+                                    width: '16px',
+                                    height: '33px',
+                                    fontSize: '26px',
+                                    color: 'rgba(2, 64, 91, 0.15)',
+                                    textAlign: 'center'
+                                }}
+                            >
+                                4
+                            </div>
+                        </div>
+                        <span
+                            className="font-mulish font-medium text-lg leading-none tracking-normal text-center align-middle text-gray-700"
+                        >
+                            Certification
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div className="flex gap-5.25 mt-12 mb-12">
+                <div className="w-[150px] h-fit rounded-lg p-2.5 flex flex-col bg-[rgba(255,255,255,0.6)] shadow-[4px_4px_20px_rgba(3,145,35,0.1)] backdrop-blur-md">
+                    <div className="flex gap-1.25">
+
+                        <div className="w-[150px] h-fit rounded-lg  flex flex-col  ">
+
+                            <div className=" flex justify-center mb-2 mb-2 ">
+                                <img src="/ecg.svg" alt="Image 1" className="rounded-md w-[32px] h-[28.67px] rounded-md  " />
+                            </div>
+
+                            <div className=" flex justify-center ">     <div className="font-mulish flex justify-center font-medium  mb-1 rounded-md text-16px leading-25px w-[82px] h-[25px]  " style={{ color: 'rgba(90, 90, 90, 1)' }}>
+                                Healthcare
+                            </div></div>
+
+
+                            <div className=" flex justify-center  ">
+                                <div className="font-mulish flex justify-center font-bold text-[22px] leading-[25px] tracking-normal w-[72px] h-[25px] rounded-md" style={{ color: 'rgba(3,145,35,1)' }}
+                                >
+                                    1000
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="w-[150px] h-fit rounded-lg p-2.5 flex flex-col bg-[rgba(255,255,255,0.6)] shadow-[4px_4px_20px_rgba(3,145,35,0.1)] backdrop-blur-md">
+                    <div className="w-[150px] h-fit rounded-lg  flex flex-col  ">
+
+                        <div className=" flex justify-center mb-2 mb-2 ">
+                            <img src="/school.svg" alt="Image 1" className="rounded-md w-[32px] h-[28.67px] rounded-md  " />
+                        </div>
+
+                        <div className=" flex justify-center ">     <div className="font-mulish flex justify-center font-medium  mb-1 rounded-md text-16px leading-25px w-[82px] h-[25px]  " style={{ color: 'rgba(90, 90, 90, 1)' }}>
+                            Educational
+                        </div></div>
+
+
+                        <div className=" flex justify-center  ">
+                            <div className="font-mulish flex justify-center font-bold text-[22px] leading-[25px] tracking-normal w-[72px] h-[25px] rounded-md" style={{ color: 'rgba(3,145,35,1)' }}
+                            >
+                                1000
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="w-[150px] h-fit rounded-lg p-2.5 flex flex-col bg-[rgba(255,255,255,0.6)] shadow-[4px_4px_20px_rgba(3,145,35,0.1)] backdrop-blur-md">
+                    <div className="w-[150px] h-fit rounded-lg  flex flex-col  ">
+
+                        <div className=" flex justify-center mb-2 mb-2 ">
+                            <img src="/holiday_village.svg" alt="Image 1" className="rounded-md w-[32px] h-[28.67px] rounded-md  " />
+                        </div>
+
+                        <div className=" flex justify-center ">     <div className="font-mulish flex justify-center font-medium  mb-1 rounded-md text-16px leading-25px w-[82px] h-[25px]  " style={{ color: 'rgba(90, 90, 90, 1)' }}>
+                            Hospitality
+                        </div></div>
+
+
+                        <div className=" flex justify-center  ">
+                            <div className="font-mulish flex justify-center font-bold text-[22px] leading-[25px] tracking-normal w-[72px] h-[25px] rounded-md" style={{ color: 'rgba(3,145,35,1)' }}
+                            >
+                                1000
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div className="w-[250px] h-fit rounded-lg p-2.5 flex flex-col bg-[rgba(255,255,255,0.6)] shadow-[4px_4px_20px_rgba(3,145,35,0.1)] backdrop-blur-md">
+                    <div className="w-[250px] h-fit rounded-lg  flex flex-col  ">
+
+                        <div className=" flex justify-center mb-2 mb-2 ">
+                            <img src="/home_work.svg" alt="Image 1" className="rounded-md w-[32px] h-[28.67px] rounded-md  " />
+                        </div>
+
+                        <div className=" flex justify-center ">     <div className="font-mulish flex justify-center font-medium  mb-1 rounded-md text-16px leading-25px w-[250px] h-[25px]  " style={{ color: 'rgba(90, 90, 90, 1)' }}>
+                            Common Establishments
+                        </div></div>
+
+
+                        <div className=" flex justify-center  ">
+                            <div className="font-mulish flex justify-center font-bold text-[22px] leading-[25px] tracking-normal w-[72px] h-[25px] rounded-md" style={{ color: 'rgba(3,145,35,1)' }}
+                            >
+                                1000
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    )
+
+}
+
+
