@@ -1,12 +1,12 @@
 import React from 'react'
-import HomePage from '../components/homePage'
+import Intoduction from '../components/Intoduction'
 
 // import VerifyOtp from '../components/verifyOtp'
 
 const page = () => {
   return (
    <>
-<HomePage/>
+<Intoduction/>
    </>
   )
 }

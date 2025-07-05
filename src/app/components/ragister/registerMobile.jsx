@@ -7,7 +7,7 @@ import { MobileValidationSchema } from '@/app/utils/ValidationSchema';
 
 
 
-export default function RegisterRightContent() {
+export default function RegisterMobile() {
 
 
 

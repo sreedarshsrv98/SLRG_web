@@ -29,7 +29,8 @@ export default function HomePage() {
                 </button>
             </div>
 
-            <div className="flex flex-row gap-4 justify-center gap-25 p-4 ">
+            <div class="flex flex-col ">
+             <div className="flex flex-row gap-4 justify-center gap-25  ">
                 <div className="p-4 ">
 
                     <div
@@ -121,28 +122,129 @@ export default function HomePage() {
 
                     </div>
                 </div>
+
+                
             </div>
 
+  <div class="flex flex-col ">
+           <div className="relative flex flex-row gap-59  justify-center">
+                <img
+                    src="/leaves.svg"  // Make sure to use forward slash
+                    alt="Leaf"
+                //   className="absolute top-[-2rem] left-1/2 transform -translate-x-1/2 w-20 h-20 "
+                />
+                <img
+                    src="/leaves.svg"  // Make sure to use forward slash
+                    alt="Leaf"
+                //   className="absolute top-[-2rem] left-1/2 transform -translate-x-1/2 w-20 h-20 "
+                />
+                <img
+                    src="/leaves.svg"  // Make sure to use forward slash
+                    alt="Leaf"
+                //   className="absolute top-[-2rem] left-1/2 transform -translate-x-1/2 w-20 h-20 "
+                />
+                <img
+                    src="/leaves.svg"  // Make sure to use forward slash
+                    alt="Leaf"
+                //   className="absolute top-[-2rem] left-1/2 transform -translate-x-1/2 w-20 h-20 "
+                />
+                <img
+                    src="/leaves.svg"  // Make sure to use forward slash
+                    alt="Leaf"
+                //   className="absolute top-[-2rem] left-1/2 transform -translate-x-1/2 w-20 h-20 "
+                />
 
-            <div className="flex flex-row gap-49 p-6 justify-center relative">
+            </div>
+           <div className="relative flex flex-row gap-50 justify-center">
 
-                {/* <div
-                    className="absolute h-0.5 bg-green-600 top-1/2"
+                {/* === Timeline Line - Starts from outer edge of first circle, ends at outer edge of last circle === */}
+                <div
+                    className="absolute top-1/2 h-0.5 bg-[rgb(115,217,139)] z-0"
                     style={{
-                        left: 'calc(5% + 2rem)',
-                        right: 'calc(5% + 2rem)',
-                        transform: 'translateY(-50%)'
+                        left: 'calc(22% - 31px + 1rem)',   // Start from right edge of first outer circle
+                        right: 'calc(22% - 31px + 1rem)',  // End at left edge of last outer circle
+                        transform: 'translateY(-50%)',
                     }}
-                ></div> */}
-  <div 
-    className="absolute h-0.5 bg-green-600 top-1/2"
-    style={{
-      left: 'calc(10% + 2.5rem)',     // Adjust based on circle size + spacing
-      right: 'calc(10% + 2.5rem)',    // Same as above
-      transform: 'translateY(-40%)'
+                ></div>
+
+                {/* === Circle 1 === */}
+                <div className="relative z-10 w-24 h-10 flex items-center justify-center">
+                    <div className="relative w-10 h-10">
+
+
+                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
+                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
+                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
+                    </div>
+                </div>
+
+                {/* === Circle 2 === */}
+                <div className="relative z-10 w-24 h-10 flex items-center justify-center">
+                    <div className="relative w-10 h-10">
+                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
+                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
+                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
+                    </div>
+                </div>
+
+                {/* === Circle 3 === */}
+                <div className="relative z-10 w-24 h-10 flex items-center justify-center">
+                    <div className="relative w-10 h-10">
+                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
+                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
+                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
+                    </div>
+                </div>
+
+                {/* === Circle 4 === */}
+                <div className="relative z-10 w-24 h-10 flex items-center justify-center">
+                    <div className="relative w-10 h-10">
+                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
+                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
+                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
+                    </div>
+                </div>
+
+                {/* === Circle 5 === */}
+                <div className="relative z-10 w-24 h-10 flex items-center justify-center">
+                    <div className="relative w-10 h-10">
+                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
+                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
+                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
+                    </div>
+                </div>
+
+            </div>
+  </div>
+
+              
+            </div>
+
+           
+      
+            
+            {/* <div className="flex flex-row gap-49 p-6 justify-center relative">
+
+       
+                <div
+  className="absolute h-0.5 bg-[rgb(115,217,139)] top-1/2"
+//   style={{
+//     left: 'calc(16% + 2.5rem)',
+//     right: 'calc(16% + 2.5rem)',
+//     transform: 'translateY(-40%)'
+//   }}
+ style={{
+      // Start from the right of the FIRST circle (which has width 24px + padding)
+      left: 'calc(16% + 2.5rem )',
+
+      // End at the left of the LAST circle
+      right: 'calc(16% + 2.5rem )',
+
+      transform: 'translateY(-50%)',
+      zIndex: 0
     }}
-  ></div>
-                
+></div>
+
 
                 <div className=" p-4 rounded text-center relative w-24 h-24 flex flex-col items-center justify-center">
                     <div className="relative w-10 h-10">
@@ -208,7 +310,7 @@ export default function HomePage() {
                         <div className="absolute inset-2.5 bg-green-600 rounded-full"></div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 }

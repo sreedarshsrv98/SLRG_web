@@ -5,12 +5,19 @@ export default function Footer() {
     <footer
 
     >
-      <div className="relative w-full px-4 text-center text-[#5A5A5A] bg-[ rgba(235, 255, 239, 1);
-]"
+      {/* <div className="relative w-full px-4 text-center text-[#5A5A5A] bg-[ rgba(235, 255, 239, 1);
+] mb-4"
         style={{
           paddingTop: '60px', paddingBottom: '60px', paddingLeft: '100px',
           paddingRight: '100px', fontSize: '0.938rem', display: "block"
-        }}>
+        }}> */}
+        <div className="
+  relative w-full px-4 sm:px-6 md:px-10 lg:px-20
+  pt-10 pb-10 sm:pt-12 sm:pb-12 md:pt-16 md:pb-16
+  text-center text-[#5A5A5A] bg-customGreen
+  text-sm sm:text-base
+  mb-8
+">
         <div className="flex flex-row justify-center items-center gap-[20px] p-6 ">
           <div className=" p-4"><img src="/Ministry_of_Tourism_India 1.svg" alt="" /></div>
           <div className=" p-4"><img src="/Group 1732.svg" alt="" /></div>
