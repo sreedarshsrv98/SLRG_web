@@ -14,9 +14,10 @@ export default function Header() {
 
             {/* Menu Items - All at same level */}
             <nav className="flex items-center gap-5" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-                <div className="hover:text-blue-500 cursor-pointer text-lg font-medium font-mulish" style={{ color: '#1A1A1A' }}>About SGLR</div>
+                <div className="hover:text-blue-500 cursor-pointer text-lg font-medium font-mulish" style={{ color: '#1A1A1A' }}>About GAP Assessment</div>
                 <div className="hover:text-blue-500 cursor-pointer" style={{ color: '#1A1A1A' }}>Institutes</div>
-                <div className="hover:text-blue-500 cursor-pointer " style={{ color: '#1A1A1A' }}>How it Works?</div>
+                <div className="hover:text-blue-500 cursor-pointer " style={{ color:  '#1A1A1A' }}>How it Works?</div>
+                <div className="hover:text-blue-500 cursor-pointer " style={{ color:  '#1A1A1A' }}>Track Status</div>
                 <div className="hover:text-black cursor-pointer">
                     <button
                         className="flex items-center justify-center gap-2 px-4 py-2 text-white bg-green-700 border-none rounded-md focus:outline-none hover:bg-green-600 transition duration-300"

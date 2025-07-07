@@ -10,15 +10,12 @@ export default function History() {
             <ToggleButton />
 
 
-            {/* <div
-  className=" w-[1118px] h-[451px] opacity-100 top-[300px] left-[161px] rounded-[6px] p-[25px] gap-[15px] flex"
-  style={{ backgroundColor: 'rgba(3, 145, 35, 0.1)' }}
->
-  
-</div> */}
+      
             <div className=" flex items-center justify-center mt-15">
                 <div
-                    className="w-full h-auto rounded-[6px] p-[25px] gap-[15px] flex flex-col bg-custom-green-100 mx-[7%]"
+                    className="w-full max-w-7xl rounded-[6px] p-4 sm:p-6 gap-4 flex flex-col bg-custom-green-100 mx-4"
+
+                    // className="w-full h-auto rounded-[6px] p-[25px] gap-[15px] flex flex-col bg-custom-green-100 mx-[7%]"
                     style={{
                         backgroundColor: 'rgba(3, 145, 35, 0.1)',
                     }}
@@ -32,7 +29,7 @@ export default function History() {
 
                         <div className="flex flex-col sm:flex-row sm:items-center gap-2 w-full sm:w-auto">
                             <div className="font-bold text-[#1A1A1A] text-[18px] sm:text-[20px] leading-[26px] tracking-normal font-mulish">
-                                SGLR Phase 1
+                                GAP Assessment Phase 1
                             </div>
                             <div
                                 className="text-[16px] sm:text-[18px] leading-[26px] tracking-normal font-semibold font-mulish"
@@ -42,13 +39,13 @@ export default function History() {
                         </div>
 
                         <button
-                            className="w-full sm:w-[172px] h-[44px] text-white rounded-[6px] px-4 py-2 flex items-center justify-center hover:bg-green-600 transition duration-300 mr-0 "
+                            className="w-full sm:w-[172px] h-[44px] text-white rounded-[6px] px-2 py-2 flex items-center justify-center hover:bg-green-600 transition duration-300 mr-0 "
                             style={{ backgroundColor: 'rgba(3, 145, 35, 1)' }}
                         >
                             <div
-                                className="text-base leading-none tracking-normal font-medium font-mulish"
+                                className="text-base leading-none tracking-normal  font-mulish"
                                 style={{ color: 'rgba(255, 255, 255, 1)' }}
-                            >  Start Assessment</div>
+                            >  View Report</div>
 
                         </button>
                     </div>
@@ -56,11 +53,11 @@ export default function History() {
 
                     <div className="flex flex-wrap -mx-2">
                         {/* Left Column */}
-                        <div className="w-full md:w-1/2 px-2 mb-4">
+                        <div className="w-full  md:w-7/12 px-2 mb-4">
                             <div className="flex flex-col space-y-4">
                                 <div className="flex-[0_0_20%] p-1">
                                     {/* <div className="flex flex-row justify-between"> */}
-                                    <div className="flex flex-row items-start gap-x-45">
+                                    <div className="flex flex-row items-start gap-x-50">
 
                                         <div className="flex flex-col">
                                             {/* First child */}
@@ -107,7 +104,7 @@ export default function History() {
 
                                 </div>
                                 <div className="flex-[0_0_20%] p-1">
-                                    <div className="flex flex-row items-start gap-x-45">
+                                    <div className="flex flex-row items-start gap-x-50">
                                         <div className="flex flex-col">
                                             {/* First child */}
                                             <div>
@@ -154,7 +151,7 @@ export default function History() {
                                 </div>
 
                                 <div className="flex-[0_0_20%] p-1">
-                                    <div className="flex flex-row items-start gap-x-59">
+                                    <div className="flex flex-row items-start gap-x-64">
                                         <div className="flex flex-col">
                                             {/* First child */}
                                             <div>
@@ -258,111 +255,118 @@ export default function History() {
                         </div>
 
                         {/* Right Column */}
-                        <div className="w-full md:w-1/2 px-2 mb-4">
-                            <div
-                                className="bg-gray-100 w-full h-auto  rounded-[10px] p-[15px] flex flex-col gap-[10px] opacity-100 border-[3px]"
-                                style={{
+                        {/* <div className="w-full md:w-1/2 px-2 mb-4"> */}
 
-                                    borderColor: 'rgba(3, 145, 35, 0.25)',
-                                    color: 'rgba(255, 255, 255, 0.5)',
-                                    backgroundColor: "rgba(255, 255, 255, 0.5)"
-                                }}
-                            >
+                        <div className=" md:w-5/12 px-2 mb-4">
+                            <div className="flex justify-end mt-8 ">
+                                <div
+                                    className="bg-gray-100  h-auto  rounded-[10px] p-[15px] flex flex-col gap-[10px] opacity-100 border-[3px]"
+                                    style={{
 
-                                <div className="flex flex-col sm:flex-row items-center justify-center gap-2 w-full sm:w-auto">
-                                    <div className="font-bold text-[#1A1A1A] text-[18px] sm:text-[20px] leading-[26px] tracking-normal font-mulish">
-                                        SGLR Phase 1
-                                    </div>
-                                    <div
-                                        className="text-[16px] sm:text-[18px] leading-[26px] tracking-normal font-semibold font-mulish"
-                                        style={{ color: 'rgba(3, 145, 35, 1)' }}
-                                    >
-                                        Approved
-                                    </div>
-                                </div>
+                                        borderColor: 'rgba(3, 145, 35, 0.25)',
+                                        color: 'rgba(255, 255, 255, 0.5)',
+                                        backgroundColor: "rgba(255, 255, 255, 0.5)"
+                                    }}
+                                >
 
-                                <div className="bg-green-50 rounded-lg shadow-md p-4 mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
-                                    <div
-                                        className="text-center text-[18px] font-medium leading-[100%] align-middle font-mulish tracking-normal mb-2"
-                                        style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                    >
-                                        Assessment Mark
-                                    </div>
-
-                                   
-                                    <div className="flex items-center justify-center gap-22">
-                                        {/* First column - FSM */}
-                                        <div className="flex flex-col text-center">
-                                            <span className="text-[14px] leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>FSM</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 w-full sm:w-auto">
+                                        <div className="font-bold text-[#1A1A1A] text-[18px] sm:text-[20px] leading-[26px] tracking-normal font-mulish">
+                                            SGLR Phase 1
                                         </div>
-
-                                        {/* Second column - SWM */}
-                                        <div className="flex flex-col text-center">
-                                            <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>SWM</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
-                                        </div>
-
-                                        {/* Third column - GWM */}
-                                        <div className="flex flex-col text-center">
-                                            <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>GWM</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>30</span>
-                                        </div>
-
-                                        {/* Separator line */}
-                                        <div className="h-[40px] w-[1px] bg-gray-300 mx-4" />
-
-                                        {/* Total column */}
-                                        <div className="flex flex-col text-center pl-2">
-                                            <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>TOTAL</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>150</span>
+                                        <div
+                                            className="text-[16px] sm:text-[18px] leading-[26px] tracking-normal font-semibold font-mulish"
+                                            style={{ color: 'rgba(3, 145, 35, 1)' }}
+                                        >
+                                            Approved
                                         </div>
                                     </div>
 
-                                </div>
-                                <div className="bg-green-50 rounded-lg shadow-md p-4 mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
-                                    <div
-                                        className="text-center text-[18px] font-medium leading-[100%] align-middle font-mulish tracking-normal mb-2"
-                                        style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                    >
-                                        Assessment Mark
+                                    <div className="bg-green-50 rounded-lg shadow-md p-4 mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
+                                        <div
+                                            className="text-center text-[18px] font-medium leading-[100%] align-middle font-mulish tracking-normal mb-2"
+                                            style={{ color: 'rgba(1, 41, 90, 1)' }}
+                                        >
+                                            Assessment Mark
+                                        </div>
+
+
+                                        <div className="flex items-center justify-center gap-22">
+
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px] leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>FSM</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                            </div>
+
+
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>SWM</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                            </div>
+
+
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>GWM</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>30</span>
+                                            </div>
+
+
+                                            <div className="h-[40px] w-[1px] bg-gray-300 mx-4" />
+
+                                            <div className="flex flex-col text-center pl-2">
+                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>TOTAL</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>150</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div className="bg-green-50 rounded-lg shadow-md p-4 mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
+                                        <div
+                                            className="text-center text-[18px] font-medium leading-[100%] align-middle font-mulish tracking-normal mb-2"
+                                            style={{ color: 'rgba(1, 41, 90, 1)' }}
+                                        >
+                                            Assessment Mark
+                                        </div>
+
+
+                                        <div className="flex items-center justify-center gap-22">
+
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px] leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>FSM</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                            </div>
+
+
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>SWM</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                            </div>
+
+
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>GWM</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>30</span>
+                                            </div>
+
+
+                                            <div className="h-[40px] w-[1px] bg-gray-300 mx-4" />
+
+
+                                            <div className="flex flex-col text-center pl-2">
+                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>TOTAL</span>
+                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>150</span>
+                                            </div>
+                                        </div>
+
                                     </div>
 
-                                   
-                                    <div className="flex items-center justify-center gap-22">
-                                        {/* First column - FSM */}
-                                        <div className="flex flex-col text-center">
-                                            <span className="text-[14px] leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>FSM</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
-                                        </div>
 
-                                        {/* Second column - SWM */}
-                                        <div className="flex flex-col text-center">
-                                            <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>SWM</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
-                                        </div>
 
-                                        {/* Third column - GWM */}
-                                        <div className="flex flex-col text-center">
-                                            <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>GWM</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>30</span>
-                                        </div>
-
-                                        {/* Separator line */}
-                                        <div className="h-[40px] w-[1px] bg-gray-300 mx-4" />
-
-                                        {/* Total column */}
-                                        <div className="flex flex-col text-center pl-2">
-                                            <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>TOTAL</span>
-                                            <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>150</span>
-                                        </div>
-                                    </div>
 
                                 </div>
 
                             </div>
-
                         </div>
+
                     </div>
 
                 </div>
