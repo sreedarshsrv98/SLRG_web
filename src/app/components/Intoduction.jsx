@@ -1,6 +1,40 @@
 
 
 export default function HomePage() {
+
+
+    const steps = [
+  {
+    bgImage: "/group.svg",
+    icon: "/pencil.svg",
+    text: "Institutions sign in and complete the questionnaire.",
+    number: "1",
+  },
+  {
+    bgImage: "/group.svg",
+    icon: "/solar_document-text-broken.svg",
+    text: "Survey is submitted for review.",
+    number: "2",
+  },
+  {
+    bgImage: "/group.svg",
+    icon: "/solar_user-plus-broken.svg",
+    text: "DSM visits the institution to verify the survey",
+    number: "3",
+  },
+  {
+    bgImage: "/group.svg",
+    icon: "/lets-icons_check-ring-round.svg",
+    text: "Higher authority reviews the report and gives final approval.",
+    number: "4",
+  },
+  {
+    bgImage: "/group.svg",
+    icon: "/hugeicons_certificate-01.svg",
+    text: "Institutions get Certified by Suchitwa Mission",
+    number: "5",
+  },
+];
     return (
         <>
 
@@ -29,287 +63,48 @@ export default function HomePage() {
                 </button>
             </div>
 
-
-
-            <div className="flex flex-wrap sm:flex-nowrap justify-between px-30 justify-center gap-20 ">
-                {/* Parent 1 */}
-                <div className="flex-1 min-w-[150px]p-4 ">
-                    <div className=" p-2 text-center">
-                        <div className="flex flex-col gap-1">
-                            {/* Parent 1 */}
-
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-
-                                    <div
-                                        className="flex flex-col items-center justify-center w-[160px] h-[250px] bg-contain bg-center bg-no-repeat rounded-lg gap-6  pb-[40px]"
-                                        style={{ backgroundImage: "url('/group.svg')" }}
-                                    >
-
-
-                                        <img src="/pencil.svg" alt="" />
-                                        <div className="font-sans font-semibold text-sm leading-none text-center text-[#179333] px-[10px]">
-                                            Institutions sign in and complete the questionnaire.
-                                        </div>
-                                        <div className="font-sans font-bold text-[23.36px] leading-none text-center text-[#179333]">
-                                            1
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Parent 2 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <img
-                                        src="/leaves.svg"  // Ensure the path is correct
-                                        alt="Leaf"
-                                        className="w-20 h-20"
-                                    />
-                                </div>
-                            </div>
-
-
-                            {/* Parent 3 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <div className="relative w-10 h-10">
-
-
-                                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
-                                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
-                                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-                <div className="flex-1 min-w-[150px]p-4 ">
-                    <div className=" p-2 text-center">
-                        <div className="flex flex-col gap-1">
-                            {/* Parent 1 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-
-                                    <div
-                                        className="flex flex-col items-center justify-center w-[160px] h-[250px] bg-contain bg-center bg-no-repeat rounded-lg gap-6  pb-[40px]"
-                                        style={{ backgroundImage: "url('/group.svg')" }}
-                                    >
-
-
-                                        <img src="/pencil.svg" alt="" />
-                                        <div className="font-sans font-semibold text-sm leading-none text-center text-[#179333] px-[10px]">
-                                     Survey is submitted for review.
-                                        </div>
-                                        <div className="font-sans font-bold text-[23.36px] leading-none text-center text-[#179333]">
-                                        2
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Parent 2 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <img
-                                        src="/leaves.svg"  // Ensure the path is correct
-                                        alt="Leaf"
-                                        className="w-20 h-20"
-                                    />
-                                </div>
-                            </div>
-
-
-                            {/* Parent 3 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <div className="relative w-10 h-10">
-
-
-                                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
-                                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
-                                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-                <div className="flex-1 min-w-[150px]p-4 ">
-                    <div className=" p-2 text-center">
-                        <div className="flex flex-col gap-1">
-                            {/* Parent 1 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-
-                                    <div
-                                        className="flex flex-col items-center justify-center w-[160px] h-[250px] bg-contain bg-center bg-no-repeat rounded-lg gap-6  pb-[40px]"
-                                        style={{ backgroundImage: "url('/group.svg')" }}
-                                    >
-
-
-                                        <img src="/pencil.svg" alt="" />
-                                        <div className="font-sans font-semibold text-sm leading-none text-center text-[#179333] px-[10px]">
-                                       DSM visits the institution to verify the survey
-                                        </div>
-                                        <div className="font-sans font-bold text-[23.36px] leading-none text-center text-[#179333]">
-                                            3
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Parent 2 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <img
-                                        src="/leaves.svg"  // Ensure the path is correct
-                                        alt="Leaf"
-                                        className="w-20 h-20"
-                                    />
-                                </div>
-                            </div>
-
-
-                            {/* Parent 3 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <div className="relative w-10 h-10">
-
-
-                                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
-                                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
-                                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-                <div className="flex-1 min-w-[150px]p-4 ">
-                    <div className=" p-2 text-center">
-                        <div className="flex flex-col gap-1">
-                            {/* Parent 1 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-
-                                    <div
-                                        className="flex flex-col items-center justify-center w-[160px] h-[250px] bg-contain bg-center bg-no-repeat rounded-lg gap-6  pb-[40px]"
-                                        style={{ backgroundImage: "url('/group.svg')" }}
-                                    >
-
-
-                                        <img src="/pencil.svg" alt="" />
-                                        <div className="font-sans font-semibold text-sm leading-none text-center text-[#179333] px-[10px]">
-                                     Higher authority reviews the report and gives final approval.
-                                        </div>
-                                        <div className="font-sans font-bold text-[23.36px] leading-none text-center text-[#179333]">
-                                            4
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Parent 2 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <img
-                                        src="/leaves.svg"  // Ensure the path is correct
-                                        alt="Leaf"
-                                        className="w-20 h-20"
-                                    />
-                                </div>
-                            </div>
-
-
-                            {/* Parent 3 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <div className="relative w-10 h-10">
-
-
-                                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
-                                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
-                                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-                <div className="flex-1 min-w-[150px]p-4 ">
-                    <div className=" p-2 text-center">
-                        <div className="flex flex-col gap-1">
-
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <div
-                                        className="flex flex-col items-center justify-center w-[160px] h-[250px] bg-contain bg-center bg-no-repeat rounded-lg gap-6  pb-[40px]"
-                                        style={{ backgroundImage: "url('/group.svg')" }}
-                                    >
-
-
-                                        <img src="/pencil.svg" alt="" />
-                                        <div className="font-sans font-semibold text-sm leading-none text-center text-[#179333] px-[10px]">
-                                          Institutions get Certified by Suchitwa Mission
-                                        </div>
-                                        <div className="font-sans font-bold text-[23.36px] leading-none text-center text-[#179333]">
-                                            5
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Parent 2 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <img
-                                        src="/leaves.svg"  // Ensure the path is correct
-                                        alt="Leaf"
-                                        className="w-20 h-20"
-                                    />
-                                </div>
-                            </div>
-
-
-                            {/* Parent 3 */}
-                            <div className="flex items-center justify-center ">
-                                <div className="text-center">
-                                    <div className="relative w-10 h-10">
-
-
-                                        <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
-                                        <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
-                                        <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
+{/* <div className="flex flex-wrap justify-center px-8 sm:px-8"> */}
+  <div className="relative flex flex-wrap justify-center gap-8 px-4 sm:px-8">
+    {/* <div className="hidden sm:block absolute bottom-[60px] left-0 right-0 h-[2px] bg-[#179333] z-0" /> */}
+      {steps.map(({ bgImage, icon, text, number }, idx) => (
+        <div
+          key={idx}
+          className="flex-1 min-w-[250px] max-w-[320px] p-4"
+        >
+          <div className="p-2 text-center flex flex-col gap-1 items-center">
+            {/* Background container */}
+            <div
+              className="flex flex-col items-center justify-center w-[160px] h-[250px] bg-contain bg-center bg-no-repeat rounded-lg pb-[40px] gap-6"
+              style={{ backgroundImage: `url('${bgImage}')` }}
+            >
+              <img src={icon} alt="" className="mx-auto" />
+              <div className="font-sans font-semibold text-sm leading-none text-center text-[#179333] px-2">
+                {text}
+              </div>
+              <div className="font-sans font-bold text-[23.36px] leading-none text-center text-[#179333]">
+                {number}
+              </div>
             </div>
+
+            {/* Leaves image */}
+            <img
+              src="/leaves.svg"
+              alt="Leaf"
+              className="w-20 h-20"
+            />
+
+            {/* Circle */}
+            <div className="relative w-10 h-10">
+              <div className="absolute inset-0 rounded-full border border-[rgba(3,145,35,1)] z-10"></div>
+              <div className="absolute inset-2 bg-[rgba(235,255,239,1)] rounded-full z-20"></div>
+              <div className="absolute inset-2.5 bg-green-600 rounded-full z-30"></div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+
+         
 
 
 

@@ -1,9 +1,7 @@
 export default function RegisterVerifyOtp() {
     return (
 
-        <div
-            className="absolute top-1/2 left-[37%] -translate-x-1/2 -translate-y-1/2 right-[80px]  w-[360px] h-[468px] rounded-[27px] bg-white shadow-[0px_4px_25px_rgba(3,145,35,0.2)]"
-        >
+          <div className="   w-[360px] rounded-[27px] bg-white shadow-[0px_4px_25px_rgba(3,145,35,0.2)] py-5 px-4">
             <div className="flex flex-col h-full px-4 py-10 space-y-2">
                 <div className=" flex items-center justify-center  mb-[25px]">
                     <img src="/phone.svg" alt="" />

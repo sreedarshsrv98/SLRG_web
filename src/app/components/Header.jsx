@@ -4,7 +4,7 @@ import LIcon from '../assets/Frame.png'
 export default function Header() {
     return (
         <header
-            className="w-[1380px] h-[150px] mx-auto flex items-center justify-between py-4  fixed top-[40px]  z-50 mb-4 header"
+            className="w-full h-auto mt-8 px-30 mx-auto flex items-center justify-between py-4  fixed top-[40px]  z-50 mb-4 header"
         // style={{ backgroundColor: '#EBFFEF' }}
         >
             {/* Logo */}

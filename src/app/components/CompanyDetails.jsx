@@ -64,6 +64,20 @@ export default function CompanyDetails() {
     </div>
   </div>
 </div>
+<div className="min-h-[100vh] flex items-center justify-center mt-4">
+  <div
+    className="w-full max-w-[90vw] sm:max-w-[80vw] md:max-w-[900px] aspect-[841/595] border-2 rounded-[24px] overflow-hidden"
+    style={{
+      borderColor: 'rgba(23, 147, 51, 1)',
+    }}
+  >
+    <img
+      src="/certificate 2.svg"
+      alt="Centered Certificate"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
 
         </>
     );

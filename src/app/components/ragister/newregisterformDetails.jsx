@@ -17,7 +17,7 @@ export default function NewRegisterFormDetails() {
 
 
     <>
-     <div className="absolute top-1/2 left-[37%] -translate-x-1/2 -translate-y-1/2 right-[80px] w-[360px] rounded-[27px] bg-white shadow-[0px_4px_25px_rgba(3,145,35,0.2)] py-5 px-4">
+     <div className="   w-[360px] rounded-[27px] bg-white shadow-[0px_4px_25px_rgba(3,145,35,0.2)] py-5 px-4">
   <div className="flex flex-col h-full space-y-4">
 
     <div className="text-center text-[18px] leading-[25px] tracking-[0] font-bold text-[rgba(26,26,26,1)] font-[Mulish]">

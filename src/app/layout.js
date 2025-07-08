@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-[#EBFFEF] w-full mx-auto">
        
-          <div className="h-[150px] flex items-center justify-center">
+          <div className="h-auto flex items-center justify-center">
             <Header />
           </div>
           {children}
