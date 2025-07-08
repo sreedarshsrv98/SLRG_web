@@ -1,10 +1,11 @@
 
 
+import NewRegisterFormDetails from './ragister/newregisterformDetails';
 import RegisterLeftContent from './ragister/ragisterforms';
 
-import RegisterVerifyOtp from './ragister/registerverifyOtp';
 
-export default function RegisterDetailsForm() {
+
+export default function NewRegisterForm() {
   return (
     <div className="mx-auto mt-4 w-full max-w-[1380px] px-4 sm:px-6 lg:px-8">
 
@@ -18,7 +19,7 @@ export default function RegisterDetailsForm() {
 
         <div className="w-full md:w-1/3 p-4 flex justify-center-mobile mt-4 md:mt-0 relative">
           <div className=" max-w-sm text-center-mobile mx-auto">
-            <RegisterVerifyOtp />
+            <NewRegisterFormDetails />
           </div>
         </div>
 

@@ -1,9 +1,9 @@
 
 
 import RegisterLeftContent from './ragister/ragisterforms';
-import RegisterMobile from './ragister/registerMobile';
+import RegisterMobileNumber from './ragister/registerMobileNumber';
 
-export default function Register() {
+export default function RegisterMobile() {
   return (
     <div className="mx-auto mt-4 w-full max-w-[1380px] px-4 sm:px-6 lg:px-8">
      
@@ -18,7 +18,7 @@ export default function Register() {
 
      <div className="w-full md:w-1/3 p-4 flex justify-center-mobile mt-4 md:mt-0 relative">
   <div className=" max-w-sm text-center-mobile mx-auto">
-    <RegisterMobile />
+    <RegisterMobileNumber />
   </div>
 </div>
 

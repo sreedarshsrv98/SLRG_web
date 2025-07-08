@@ -1,11 +1,12 @@
 import React from 'react'
+import NewRegisterForm from '../components/NewRegisterForm'
 
-import VerifyOtp from '../components/verifyOtp'
+
 
 const page = () => {
   return (
    <>
-   
+   <NewRegisterForm/>
    </>
   )
 }
