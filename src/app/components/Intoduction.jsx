@@ -38,7 +38,7 @@ export default function HomePage() {
     return (
         <>
 
-            <div className="flex flex-col items-center justify-center gap-4 w-full  mx-auto p-4  ">
+            {/* <div className="flex flex-col items-center justify-center gap-4 w-full  mx-auto p-4  ">
                 <div
                     className="  font-[Mulish]  text-[26px] leading-[100%] tracking-[0%] text-[rgba(1,41,90,1)]"
                 >
@@ -61,17 +61,45 @@ export default function HomePage() {
                 >
                     Get Started
                 </button>
-            </div>
+            </div> */}
+<div className="flex flex-col items-center justify-center  w-full mx-auto p-4 text-center">
+  <div className="font-[Mulish] font-semibold text-lg sm:text-2xl text-[rgba(1,41,90,1)] leading-snug">
+    Simple steps to get your institution rated
+  </div>
+
+  <div
+    className="font-[Mulish] font-black text-4xl sm:text-6xl leading-tight capitalize"
+    style={{
+      color: 'rgba(3, 145, 35, 1)',
+      WebkitTextStroke: '0.5px rgba(3, 145, 35, 1)',
+    }}
+  >
+    How It Works
+  </div>
+
+  <div className="font-[Mulish] font-semibold text-lg sm:text-2xl text-[rgba(1,41,90,1)] leading-snug ">
+    from survey to final approval.
+  </div>
+
+  <button
+    className="w-full max-w-[180px] h-11 py-2 px-4 bg-[rgba(3,145,35,1)] text-white rounded-md flex items-center justify-center gap-2.5 text-sm sm:text-base hover:bg-green-600 mt-2"
+  >
+    Get Started
+  </button>
+</div>
 
 {/* <div className="flex flex-wrap justify-center px-8 sm:px-8"> */}
-  <div className="relative flex flex-wrap justify-center gap-8 px-4 sm:px-8">
-    {/* <div className="hidden sm:block absolute bottom-[60px] left-0 right-0 h-[2px] bg-[#179333] z-0" /> */}
+        <div className="relative flex flex-wrap justify-center  gap-0 sm:gap-10  px-4 sm:px-8">
+<div className="hidden sm:block absolute left-[18%] right-[18%] bottom-[40px] h-[2px] bg-[#C8F0D1] z-0" />
+
       {steps.map(({ bgImage, icon, text, number }, idx) => (
         <div
           key={idx}
-          className="flex-1 min-w-[250px] max-w-[320px] p-4"
+          // className="flex-1 min-w-[250px] max-w-[320px] p-4"
+      className="max-sm:w-1/2 w-auto p-4 z-10 flex justify-center"
         >
-          <div className="p-2 text-center flex flex-col gap-1 items-center">
+          {/* <div className="p-2 text-center flex flex-col gap-1 items-center"> */}
+           <div className="p-2 text-center flex flex-col gap-1 items-center">
             {/* Background container */}
             <div
               className="flex flex-col items-center justify-center w-[160px] h-[250px] bg-contain bg-center bg-no-repeat rounded-lg pb-[40px] gap-6"

@@ -1,44 +1,89 @@
-import LIcon from '../assets/Frame.png'
+'use client';
 
 
+import { Menu, X } from 'lucide-react'; 
+
+import { useState } from 'react';
 export default function Header() {
+      const [menuOpen, setMenuOpen] = useState(false);
     return (
-        <header
-            className="w-full h-auto mt-8 px-30 mx-auto flex items-center justify-between py-4  fixed top-[40px]  z-50 mb-4 header"
-        // style={{ backgroundColor: '#EBFFEF' }}
-        >
-            {/* Logo */}
-            <div >
-                <img src="/sm-logo.svg" alt="" />
-            </div>
+      
+        <>
+        
+<header className="header w-full bg-[#EBFFEF] ">
+      <div className="max-w-[1300px] mx-auto px-[30px] flex items-center justify-between py-4">
+        {/* Logo */}
+      <div>
+  <img
+    src="/sm-logo.svg"
+    alt="Logo"
+    className="h-[50px] sm:h-[60px] md:h-[100px] w-auto"
+  />
+</div>
 
-            {/* Menu Items - All at same level */}
-            <nav className="flex items-center gap-5" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
-                <div className="hover:text-blue-500 cursor-pointer text-lg font-medium font-mulish" style={{ color: '#1A1A1A' }}>About GAP Assessment</div>
-                <div className="hover:text-blue-500 cursor-pointer" style={{ color: '#1A1A1A' }}>Institutes</div>
-                <div className="hover:text-blue-500 cursor-pointer " style={{ color:  '#1A1A1A' }}>How it Works?</div>
-                <div className="hover:text-blue-500 cursor-pointer " style={{ color:  '#1A1A1A' }}>Track Status</div>
-                <div className="hover:text-black cursor-pointer">
-                    <button
-                        className="flex items-center justify-center gap-2 px-4 py-2 text-white bg-green-700 border-none rounded-md focus:outline-none hover:bg-green-600 transition duration-300"
-                        style={{
-                            width: '173px',
-                            height: '46px',
-                        }}
-                    >
-                        {/* Icon */}
-                        <span>
-                            <img src="/solar_user-linear.png" alt="User Icon" className="w-5 h-5" />
-                        </span>
 
-                        {/* Text */}
-                        <span className="font-medium">Register / Login</span>
-                    </button>
-                </div>
-                <div className="text-white px-4 py-2 rounded-full  transition cursor-pointer select-none">
-                    <img src='/Frame 2085.png' alt="dddddddddddddd" />
-                </div>
-            </nav>
-        </header>
+        {/* Hamburger - mobile only */}
+        <div className="md:hidden">
+          <button onClick={() => setMenuOpen(!menuOpen)}>
+            {menuOpen ? <X size={30} /> : <Menu size={30} />}
+          </button>
+        </div>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex items-center gap-[20px]">
+          <div className="hover:text-blue-500 cursor-pointer text-lg font-medium font-mulish text-[#1A1A1A]">
+            About GAP Assessment
+          </div>
+          <div className="hover:text-blue-500 cursor-pointer text-lg font-medium font-mulish text-[#1A1A1A]">
+            Institutes
+          </div>
+          <div className="hover:text-blue-500 cursor-pointer text-lg font-medium font-mulish text-[#1A1A1A]">
+            How it Works?
+          </div>
+          <div className="hover:text-blue-500 cursor-pointer text-lg font-medium font-mulish text-[#1A1A1A]">
+            Track Status
+          </div>
+          <button
+            className="flex items-center justify-center gap-2 px-4 py-2 text-white bg-green-700 rounded-md hover:bg-green-600 transition"
+            style={{ width: '173px', height: '46px' }}
+          >
+            <img src="/solar_user-linear.png" alt="User Icon" className="w-5 h-5" />
+            <span className="font-medium">Register / Login</span>
+          </button>
+          <div>
+            <img src="/Frame 2085.png" alt="Lang" className="h-[46px] w-auto" />
+          </div>
+        </nav>
+      </div>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div className="md:hidden px-[30px] py-4 space-y-4 bg-[#EBFFEF] shadow-md">
+          <div className="text-[#1A1A1A] text-[16px] font-[Mulish] font-medium">
+            About GAP Assessment
+          </div>
+          <div className="text-[#1A1A1A] text-[16px] font-[Mulish] font-medium">
+            Institutes
+          </div>
+          <div className="text-[#1A1A1A] text-[16px] font-[Mulish] font-medium">
+            How it Works?
+          </div>
+          <div className="text-[#1A1A1A] text-[16px] font-[Mulish] font-medium">
+            Track Status
+          </div>
+          <button
+            className="w-full flex items-center justify-center gap-2 px-4 py-2 text-white bg-green-700 rounded-md hover:bg-green-600 transition"
+            style={{ height: '46px' }}
+          >
+            <img src="/solar_user-linear.png" alt="User Icon" className="w-5 h-5" />
+            <span className="font-medium">Register / Login</span>
+          </button>
+          <div>
+            <img src="/Frame 2085.png" alt="Lang" className="h-[46px] w-auto" />
+          </div>
+        </div>
+      )}
+    </header>
+        </>
     );
 }
