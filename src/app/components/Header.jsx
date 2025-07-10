@@ -51,7 +51,7 @@ export default function Header() {
             <span className="font-medium">Register / Login</span>
           </button>
           <div>
-            <img src="/Frame 2085.png" alt="Lang" className="h-[46px] w-auto" />
+            <img src="/LangML.svg" alt="Lang" className="h-[46px] w-auto" />
           </div>
         </nav>
       </div>
@@ -79,7 +79,7 @@ export default function Header() {
             <span className="font-medium">Register / Login</span>
           </button>
           <div>
-            <img src="/Frame 2085.png" alt="Lang" className="h-[46px] w-auto" />
+            <img src="/LangML.svg" alt="Lang" className="h-[46px] w-auto" />
           </div>
         </div>
       )}

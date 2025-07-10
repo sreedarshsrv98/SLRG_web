@@ -108,8 +108,10 @@ export default function Assessment() {
 
         <>
             {/* Header Section */}
+            
             <div
-                className="relative h-auto rounded-[6px] gap-[10px] mx-auto px-4 max-w-[1118px] py-5"
+                //   className="relative h-auto rounded-[6px] gap-[10px] mx-auto px-4 max-w-[1118px] py-5 "
+                className="relative h-auto rounded-[6px] gap-[10px] mx-4 sm:mx-6 md:mx-auto px-4 max-w-[1118px] py-5"
                 style={{
                     backgroundColor: 'rgba(3, 145, 35, 0.1)',
                     opacity: 1,
@@ -120,7 +122,7 @@ export default function Assessment() {
                 </div>
 
                 <div className="flex flex-row gap-4 w-full">
-                    {/* Column 1 */}
+
                     <div className="flex-1">
                         <div className="flex flex-col space-y-4">
                             <div>
@@ -142,7 +144,7 @@ export default function Assessment() {
                         </div>
                     </div>
 
-                    {/* Column 2 */}
+
                     <div className="flex-1">
                         <div className="flex flex-col space-y-4">
                             <div>
@@ -164,7 +166,7 @@ export default function Assessment() {
                         </div>
                     </div>
 
-                    {/* Column 3 */}
+
                     <div className="flex-1">
                         <div className="flex flex-col space-y-4">
                             <div>
@@ -189,7 +191,9 @@ export default function Assessment() {
 
             {/* Questions Header */}
             <div
-                className="relative h-auto rounded-[6px] gap-[10px] mx-auto px-8 py-8 max-w-[1118px]"
+                // className="relative h-auto rounded-[6px] gap-[10px] mx-auto px-8 py-8 max-w-[1118px]"
+                className="relative h-auto rounded-[6px] gap-[10px] mx-4 sm:mx-6 md:mx-auto px-6 max-w-[1118px] py-7"
+
                 style={{
                     backgroundColor: 'rgba(3, 145, 35, 0.1)',
                     opacity: 1,
@@ -238,29 +242,28 @@ export default function Assessment() {
                         ))}
                     </div> */}
                     <div className="w-full sm:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-4 px-3 mt-2">
-  {currentQuestion?.options.map((option) => (
-    <button
-      key={option}
-      onClick={() => handleOptionChange(currentQuestion.id, option)}
-      className={`
+                        {currentQuestion?.options.map((option) => (
+                            <button
+                                key={option}
+                                onClick={() => handleOptionChange(currentQuestion.id, option)}
+                                className={`
         w-full rounded-[6px] opacity-100 border transition-colors duration-300
-        ${
-          currentQuestion.selectedOption === option
-            ? "bg-[rgba(1,41,90,1)] border-[rgba(1,41,90,1)] text-white"
-            : "bg-[rgba(3,145,35,0.1)] border-[rgba(3,145,35,0.5)] text-[rgba(3,145,35,1)]"
-        }
+        ${currentQuestion.selectedOption === option
+                                        ? "bg-[rgba(1,41,90,1)] border-[rgba(1,41,90,1)] text-white"
+                                        : "bg-[rgba(3,145,35,0.1)] border-[rgba(3,145,35,0.5)] text-[rgba(3,145,35,1)]"
+                                    }
         h-[40px] sm:h-[46px] px-4 sm:px-10 text-sm sm:text-base
       `}
-      style={{
-        gap: "8px",
-        transform: "rotate(0deg)",
-        borderWidth: "1px",
-      }}
-    >
-      {option}
-    </button>
-  ))}
-</div>
+                                style={{
+                                    gap: "8px",
+                                    transform: "rotate(0deg)",
+                                    borderWidth: "1px",
+                                }}
+                            >
+                                {option}
+                            </button>
+                        ))}
+                    </div>
 
                 </div>
 
@@ -388,67 +391,71 @@ export default function Assessment() {
 
 
                     </div>
-                    <div className="flex flex-row justify-between items-center gap-x-3 flex-wrap sm:flex-nowrap">
-                        <button
-                            className="
-      w-full sm:w-[125px] 
-      h-[32px] sm:h-[40px] 
-      gap-[8px] sm:gap-[10px] 
+                
+     {/* <div className="flex flex-row justify-between items-center gap-x-2 flex-wrap sm:flex-nowrap"> */}
+     <div className="flex flex-row justify-end sm:justify-between items-center gap-x-2 flex-wrap sm:flex-nowrap">
+  <button
+    className="
+      w-[100px] sm:w-[125px]
+      h-[28px] sm:h-[40px]
+      px-[6px] sm:px-[15px]
+      py-[4px] sm:py-[10px]
+      text-[11px] sm:text-[16px]
       rounded-[6px]
-      px-[10px] sm:px-[15px] 
-      py-[6px] sm:py-[10px] 
       border border-[#1A1A1A]
       hover:bg-[#1A1A1A] hover:text-white
       active:scale-95 active:bg-[#111111]
       transition-all duration-150 ease-in-out
       mb-2 sm:mb-0
     "
-                        >
-                            <span className="font-bold text-[14px] sm:text-[16px] leading-[100%] tracking-[0] text-[#1A1A1A] font-mulish hover:text-white">
-                                Save Draft
-                            </span>
-                        </button>
+  >
+    <span className="font-bold leading-[100%] tracking-[0] font-mulish text-[#1A1A1A] hover:text-white">
+      Save Draft
+    </span>
+  </button>
 
-                        <button
-                            className="
-      w-full sm:w-[125px] 
-      h-[32px] sm:h-[40px] 
-      gap-[8px] sm:gap-[10px] 
+  <button
+    className="
+      w-[100px] sm:w-[125px]
+      h-[28px] sm:h-[40px]
+      px-[6px] sm:px-[15px]
+      py-[4px] sm:py-[10px]
+      text-[11px] sm:text-[16px]
       rounded-[6px]
-      px-[10px] sm:px-[15px] 
-      py-[6px] sm:py-[10px] 
       bg-white bg-opacity-50
       hover:bg-opacity-75
       active:scale-95 active:bg-opacity-90
       transition-all duration-150 ease-in-out
       mb-2 sm:mb-0
     "
-                        >
-                            <span className="font-bold text-[14px] sm:text-[16px] leading-[100%] tracking-[0] text-[#1A1A1A] font-mulish">
-                                Previous
-                            </span>
-                        </button>
+  >
+    <span className="font-bold leading-[100%] tracking-[0] font-mulish text-[#1A1A1A]">
+      Previous
+    </span>
+  </button>
 
-                        <button
-                            className="
-      w-full sm:w-[125px] 
-      h-[32px] sm:h-[40px] 
-      gap-[8px] sm:gap-[10px] 
+  <button
+    className="
+      w-[100px] sm:w-[125px]
+      h-[28px] sm:h-[40px]
+      px-[6px] sm:px-[15px]
+      py-[4px] sm:py-[10px]
+      text-[11px] sm:text-[16px]
       rounded-[6px]
-      px-[10px] sm:px-[15px] 
-      py-[6px] sm:py-[10px] 
       text-white bg-[rgba(3,145,35,1)]
       hover:bg-[rgba(3,130,31,1)]
       active:scale-95 active:bg-[rgba(2,110,26,1)]
       transition-all duration-150 ease-in-out
       mb-2 sm:mb-0
     "
-                        >
-                            <span className="font-bold text-[14px] sm:text-[16px] leading-[100%] tracking-[0] text-white font-mulish">
-                                Next
-                            </span>
-                        </button>
-                    </div>
+  >
+    <span className="font-bold leading-[100%] tracking-[0] font-mulish text-white">
+      Next
+    </span>
+  </button>
+</div>
+
+
 
 
 

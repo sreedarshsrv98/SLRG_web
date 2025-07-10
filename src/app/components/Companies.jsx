@@ -132,79 +132,7 @@ export default function Companies() {
 
             </div>
 
-      {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full p-10 px-30">
-  {data.map((card, index) => (
-    <div
-      key={index}
-      className="rounded-[10px] border p-[15px] w-full h-auto"
-      style={{
-        backgroundColor: 'rgba(255, 255, 255, 1)',
-        borderColor: 'rgba(0, 170, 188, 0.1)',
-        opacity: 1,
-        transform: 'rotate(0deg)',
-      }}
-    >
-
-      <div className="mb-2">
-        <div className="font-mulish font-bold text-[18px] leading-[100%] tracking-[0] text-[rgba(42,42,42,1)]">
-          {card.title}
-        </div>
-
-        <span
-          className="inline-block text-[13px] font-semibold rounded-[3px] px-[6px] py-[2px] mt-2 text-[rgba(3,145,35,1)]"
-          style={{ backgroundColor: 'rgba(3, 145, 35, 0.2)', opacity: 1 }}
-        >
-          {card.type}
-        </span>
-      </div>
-
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center gap-2">
-          <span className="font-mulish font-bold text-[14px] leading-[100%] tracking-[0] text-[rgba(90,90,90,1)]">
-            District
-          </span>
-          <span className="font-mulish font-bold text-[14px] leading-[100%] tracking-[0] text-[rgba(26,26,26,1)]">
-            {card.district}
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <span className="font-mulish font-bold text-[14px] leading-[100%] tracking-[0] text-[rgba(90,90,90,1)]">
-            Localbody
-          </span>
-          <span className="font-mulish font-bold text-[14px] leading-[100%] tracking-[0] text-[rgba(26,26,26,1)]">
-            {card.localbody}
-          </span>
-        </div>
-
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="font-mulish font-bold text-[14px] leading-[100%] tracking-[0] text-[rgba(90,90,90,1)]">
-              Date
-            </span>
-            <span className="font-mulish font-bold text-[14px] leading-[100%] tracking-[0] text-[rgba(26,26,26,1)]">
-              {card.date}
-            </span>
-          </div>
-
-          <div className="flex items-center justify-end mt-2">
-            {card.status === 'Active' ? (
-              <span className="text-sm font-medium text-green-600">
-                <span className="inline-block h-2 w-2 rounded-full bg-green-500 mr-1"></span>
-                Active
-              </span>
-            ) : (
-              <span className="text-sm font-medium text-red-600">
-                <span className="inline-block h-2 w-2 rounded-full bg-red-500 mr-1"></span>
-                Expired
-              </span>
-            )}
-          </div>
-        </div>
-      </div>
-    </div>
-  ))}
-</div> */}
+   
 
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full px-4 py-6 sm:px-16 md:px-18 lg:px-30">
   {data.map((card, index) => (
@@ -231,7 +159,7 @@ export default function Companies() {
       </div>
 
       {/* Info Section */}
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 mt-5">
         <div className="flex items-center gap-2">
           <span className="font-mulish font-bold text-[14px] text-[rgba(90,90,90,1)]">District</span>
           <span className="font-mulish font-bold text-[14px] text-[rgba(26,26,26,1)]">{card.district}</span>

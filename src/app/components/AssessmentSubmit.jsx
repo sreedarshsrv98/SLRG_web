@@ -30,7 +30,8 @@ export default function AssessmentSubmit() {
 
             </div>
             <div
-                className="relative h-auto rounded-[20px] gap-[10px] mx-auto px-6 max-w-[1118px] py-7"
+                // className="relative h-auto rounded-[20px] gap-[10px] mx-auto px-6 max-w-[1118px] py-7"
+                className="relative h-auto rounded-[20px] gap-[10px] mx-4 sm:mx-auto px-6 max-w-[1118px] py-7"
                 style={{
                     backgroundColor: 'rgba(3, 145, 35, 0.1)',
                     opacity: 1,
@@ -117,14 +118,15 @@ export default function AssessmentSubmit() {
             </div>
 
             <div className="w-full max-w-7xl px-4 sm:px-6 lg:px-25 mx-auto mt-10">
-                <div className="font-bold text-[26px] leading-[100%] tracking-[0] text-[rgba(1,41,90,1)] font-[Lexend]">
+             <div className="font-lexend font-bold text-[26px] leading-[100%] tracking-[0] text-[rgba(1,41,90,1)]">
                     Tracking Details
                 </div>
+
             </div>
 
 
-
-            <div className="bg-green-50  px-6">
+ 
+            <div className="bg-green-50  px-6 mb-10">
 
 
                 <div className="relative w-full max-w-5xl mx-auto h-4">
@@ -153,10 +155,11 @@ export default function AssessmentSubmit() {
 
                             return (
                                 <div className="flex flex-col items-center text-center w-1/4" key={index}>
-                                    <div className="w-8 h-8 bg-white shadow rounded-md flex items-center justify-center z-10">
+                                    <div className="w-8 h-8 bg-white shadow rounded-md flex items-center justify-center z-10"
+                                        style={{ marginTop: '-10px' }}>
                                         <Check
                                             size={18}
-                                             strokeWidth={4}
+                                            strokeWidth={4}
                                             className={`${completed ? "text-green-700" : "text-gray-500"}`}
                                         />
                                     </div>

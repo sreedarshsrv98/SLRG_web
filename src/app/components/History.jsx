@@ -10,7 +10,7 @@ export default function History() {
             <ToggleButton />
 
 
-      
+
             <div className=" flex items-center justify-center mt-15">
                 <div
                     className="w-full max-w-7xl rounded-[6px] p-4 sm:p-6 gap-4 flex flex-col bg-custom-green-100 mx-4"
@@ -51,319 +51,145 @@ export default function History() {
                     </div>
                     <hr style={{ borderColor: 'rgba(3, 145, 35, 0.2)' }} />
 
+
                     <div className="flex flex-wrap -mx-2">
                         {/* Left Column */}
-                        <div className="w-full  md:w-7/12 px-2 mb-4">
+                        <div className="w-full md:flex-1 min-w-[320px] px-2 mb-4">
                             <div className="flex flex-col space-y-4">
-                                <div className="flex-[0_0_20%] p-1">
-                                    {/* <div className="flex flex-row justify-between"> */}
-                                    <div className="flex flex-row items-start gap-x-50">
-
-                                        <div className="flex flex-col">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    Reference ID
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >987456232364</div>
-                                            </div>
+                                {/* Row 1 */}
+                                <div className="p-">
+                                    <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
+                                        <div className="flex flex-col w-full sm:w-[48%]">
+                                            <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">Reference ID</div>
+                                            <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">987456232364</div>
                                         </div>
-                                        <div className="flex flex-col">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    Institution Name
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >Radison Blue</div>
-                                            </div>
+                                        <div className="flex flex-col w-full sm:w-[48%]">
+                                            <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">Institution Name</div>
+                                            <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">Radison Blue</div>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div className="flex-[0_0_20%] p-1">
-                                    <div className="flex flex-row items-start gap-x-50">
-                                        <div className="flex flex-col">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    Institution Type
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >Hospitality</div>
-                                            </div>
+                                {/* Row 2 */}
+                                <div className="p-">
+                                    <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
+                                        <div className="flex flex-col w-full sm:w-[48%]">
+                                            <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">Institution Type</div>
+                                            <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">Hospitality</div>
                                         </div>
-                                        <div className="flex flex-col items-start">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    Mobile
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >9876543210</div>
-                                            </div>
+                                        <div className="flex flex-col w-full sm:w-[48%]">
+                                            <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">Mobile</div>
+                                            <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">9876543210</div>
                                         </div>
                                     </div>
-
                                 </div>
-
-                                <div className="flex-[0_0_20%] p-1">
-                                    <div className="flex flex-row items-start gap-x-64">
-                                        <div className="flex flex-col">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    District
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >Kannur</div>
-                                            </div>
+                                {/* Row 3 */}
+                                <div className="p-">
+                                    <div className="flex flex-col sm:flex-row sm:justify-between gap-4">
+                                        <div className="flex flex-col w-full sm:w-[48%]">
+                                            <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">District</div>
+                                            <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">Kannur</div>
                                         </div>
-                                        <div className="flex flex-col items-start">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    Localbody
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >Thalassery</div>
-                                            </div>
+                                        <div className="flex flex-col w-full sm:w-[48%]">
+                                            <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">Localbody</div>
+                                            <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">Thalassery</div>
                                         </div>
                                     </div>
-
                                 </div>
-                                <div className="flex-[0_0_20%] p-1">
-                                    <div className="flex flex-row items-start gap-x-30">
-                                        <div className="flex flex-col">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    Submitted By
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >Suchitwa Mission,  03 Jan 2025,  02:20pm</div>
-                                            </div>
+                                {/* Row 4 */}
+                                <div className="p-">
+                                    <div className="flex flex-col">
+                                        <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">Submitted By</div>
+                                        <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">
+                                            Suchitwa Mission, 03 Jan 2025, 02:20pm
                                         </div>
-                                        {/* <div className="p-4 ">Column22222222</div> */}
                                     </div>
-
                                 </div>
-                                <div className="flex-[0_0_20%] p-1">
-                                    <div className="flex flex-row items-start gap-x-30">
-                                        <div className="flex flex-col">
-                                            {/* First child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-medium text-[16px] leading-[100%] align-middle"
-                                                    style={{ color: 'rgba(90, 90, 90, 1)' }}
-                                                >
-                                                    Approved by
-                                                </div>
-
-                                            </div>
-
-                                            {/* Second child */}
-                                            <div>
-                                                <div
-                                                    className="p-1 font-mulish font-semibold text-[16px] leading-[100%] align-middle tracking-normal"
-                                                    style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                                >Rajesh KP, 04 Jan 2025,  04:10pm</div>
-                                            </div>
+                                {/* Row 5 */}
+                                <div className="p-">
+                                    <div className="flex flex-col">
+                                        <div className="p-1 text-gray-600 font-mulish font-medium text-[16px]">Approved By</div>
+                                        <div className="p-1 text-blue-900 font-mulish font-semibold text-[16px]">
+                                            Rajesh KP, 04 Jan 2025, 04:10pm
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
-
                         </div>
 
                         {/* Right Column */}
-                        {/* <div className="w-full md:w-1/2 px-2 mb-4"> */}
 
-                        <div className=" md:w-5/12 px-2 mb-4">
-                            <div className="flex justify-end mt-8 ">
+                        <div className="w-full md:flex-1 min-w-[320px] px-2 mb-4">
+                            <div className="flex justify-center md:justify-end mt-8">
                                 <div
-                                    className="bg-gray-100  h-auto  rounded-[10px] p-[15px] flex flex-col gap-[10px] opacity-100 border-[3px]"
+                                    className="bg-gray-100 w-[80%] md:w-[80%] rounded-lg p-4 flex flex-col gap-4 border-4"
                                     style={{
-
-                                        borderColor: 'rgba(3, 145, 35, 0.25)',
-                                        color: 'rgba(255, 255, 255, 0.5)',
-                                        backgroundColor: "rgba(255, 255, 255, 0.5)"
+                                        borderColor: 'rgba(3,145,35,0.25)',
+                                        backgroundColor: 'rgba(255,255,255,0.5)',
                                     }}
                                 >
-
-                                    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 w-full sm:w-auto">
-                                        <div className="font-bold text-[#1A1A1A] text-[18px] sm:text-[20px] leading-[26px] tracking-normal font-mulish">
+                                    {/* Header */}
+                                    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 text-center sm:text-center">
+                                        <div className="font-bold text-[#1A1A1A] text-[18px] sm:text-[20px] font-mulish">
                                             SGLR Phase 1
                                         </div>
-                                        <div
-                                            className="text-[16px] sm:text-[18px] leading-[26px] tracking-normal font-semibold font-mulish"
-                                            style={{ color: 'rgba(3, 145, 35, 1)' }}
-                                        >
+                                        <div className="text-[16px] sm:text-[18px] font-semibold font-mulish" style={{ color: 'rgba(3,145,35,1)' }}>
                                             Approved
                                         </div>
                                     </div>
 
-                                    <div className="bg-green-50 rounded-lg shadow-md p-4 mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
-                                        <div
-                                            className="text-center text-[18px] font-medium leading-[100%] align-middle font-mulish tracking-normal mb-2"
-                                            style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                        >
+
+                                    {/* Assessment Mark 1 */}
+                                    <div className="bg-green-50 rounded-lg shadow-md p-4">
+                                        <div className="text-center text-[16px] sm:text-[18px] font-medium text-blue-900 font-mulish mb-2">
                                             Assessment Mark
                                         </div>
-
-
-                                        <div className="flex items-center justify-center gap-22">
-
+                                        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
                                             <div className="flex flex-col text-center">
-                                                <span className="text-[14px] leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>FSM</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                                <span className="text-[14px] text-gray-600 font-mulish">FSM</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">60</span>
                                             </div>
-
-
                                             <div className="flex flex-col text-center">
-                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>SWM</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                                <span className="text-[14px] text-gray-600 font-mulish">SWM</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">60</span>
                                             </div>
-
-
                                             <div className="flex flex-col text-center">
-                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>GWM</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>30</span>
+                                                <span className="text-[14px] text-gray-600 font-mulish">GWM</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">30</span>
                                             </div>
-
-
-                                            <div className="h-[40px] w-[1px] bg-gray-300 mx-4" />
-
-                                            <div className="flex flex-col text-center pl-2">
-                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>TOTAL</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>150</span>
+                                            <div className="hidden sm:block h-10 w-px bg-gray-300 mx-2"></div>
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px] text-gray-600 font-mulish">TOTAL</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">150</span>
                                             </div>
                                         </div>
-
                                     </div>
-                                    <div className="bg-green-50 rounded-lg shadow-md p-4 mb-4" style={{ backgroundColor: 'rgba(255, 255, 255, 0.4)' }}>
-                                        <div
-                                            className="text-center text-[18px] font-medium leading-[100%] align-middle font-mulish tracking-normal mb-2"
-                                            style={{ color: 'rgba(1, 41, 90, 1)' }}
-                                        >
+
+                                    {/* Assessment Mark 2 */}
+                                    <div className="bg-green-50 rounded-lg shadow-md p-4">
+                                        <div className="text-center text-[16px] sm:text-[18px] font-medium text-blue-900 font-mulish mb-2">
                                             Assessment Mark
                                         </div>
-
-
-                                        <div className="flex items-center justify-center gap-22">
-
+                                        <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10">
                                             <div className="flex flex-col text-center">
-                                                <span className="text-[14px] leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>FSM</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                                <span className="text-[14px] text-gray-600 font-mulish">FSM</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">60</span>
                                             </div>
-
-
                                             <div className="flex flex-col text-center">
-                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>SWM</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>60</span>
+                                                <span className="text-[14px] text-gray-600 font-mulish">SWM</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">60</span>
                                             </div>
-
-
                                             <div className="flex flex-col text-center">
-                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>GWM</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>30</span>
+                                                <span className="text-[14px] text-gray-600 font-mulish">GWM</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">30</span>
                                             </div>
-
-
-                                            <div className="h-[40px] w-[1px] bg-gray-300 mx-4" />
-
-
-                                            <div className="flex flex-col text-center pl-2">
-                                                <span className="text-[14px]  leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(90, 90, 90, 1)' }}>TOTAL</span>
-                                                <span className="text-[20px] font-bold leading-[100%] align-middle tracking-normal font-mulish" style={{ color: 'rgba(1, 41, 90, 1)' }}>150</span>
+                                            <div className="hidden sm:block h-10 w-px bg-gray-300 mx-2"></div>
+                                            <div className="flex flex-col text-center">
+                                                <span className="text-[14px] text-gray-600 font-mulish">TOTAL</span>
+                                                <span className="text-[18px] sm:text-[20px] font-bold text-blue-900 font-mulish">150</span>
                                             </div>
                                         </div>
-
                                     </div>
-
-
-
-
                                 </div>
-
                             </div>
                         </div>
 

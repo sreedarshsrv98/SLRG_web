@@ -21,9 +21,9 @@ export default function NewRegisterForm() {
       <div className="flex flex-col md:flex-row gap-6">
         {/* Left Column - 7/12 */}
         <div className="w-full md:w-8/12 flex flex-col ">
-        
-            <RegisterLeftContent />
-         
+
+          <RegisterLeftContent />
+
         </div>
 
         {/* Right Column - 5/12 */}
@@ -32,25 +32,25 @@ export default function NewRegisterForm() {
             <NewRegisterFormDetails />
           </div>
         </div>
-             <div className="flex flex-wrap justify-center gap-4 px-4 md:hidden">
-  {[
-    { label: 'Healthcare', icon: '/ecg.svg', count: '1000' },
-    { label: 'Educational', icon: '/school.svg', count: '1000' },
-    { label: 'Hospitality', icon: '/holiday_village.svg', count: '1000' },
-    { label: 'Common Establishments', icon: '/home_work.svg', count: '1000' },
-  ].map(({ label, icon, count }, index) => (
-    <div
-      key={index}
-      className="w-[45%] min-w-[150px] rounded-lg p-2.5 bg-[rgba(255,255,255,0.6)] shadow-[4px_4px_20px_rgba(3,145,35,0.1)] backdrop-blur-md"
-    >
-      <div className="flex flex-col items-center">
-        <img src={icon} alt={label} className="w-8 h-8 mb-2" />
-        <div className="text-[13px] font-mulish font-medium text-gray-700 text-center mb-1">{label}</div>
-        <div className="text-[18px] font-bold font-mulish text-[#039123]">{count}</div>
-      </div>
-    </div>
-  ))}
-</div>
+        <div className="flex flex-wrap justify-center gap-4 px-4 md:hidden">
+          {[
+            { label: 'Healthcare', icon: '/ecg.svg', count: '1000' },
+            { label: 'Educational', icon: '/school.svg', count: '1000' },
+            { label: 'Hospitality', icon: '/holiday_village.svg', count: '1000' },
+            { label: 'Common Establishments', icon: '/home_work.svg', count: '1000' },
+          ].map(({ label, icon, count }, index) => (
+            <div
+              key={index}
+              className="w-[45%] min-w-[150px] rounded-lg p-2.5 bg-[rgba(255,255,255,0.6)] shadow-[4px_4px_20px_rgba(3,145,35,0.1)] backdrop-blur-md"
+            >
+              <div className="flex flex-col items-center">
+                <img src={icon} alt={label} className="w-8 h-8 mb-2" />
+                <div className="text-[13px] font-mulish font-medium text-gray-700 text-center mb-1">{label}</div>
+                <div className="text-[18px] font-bold font-mulish text-[#039123]">{count}</div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
     </div>
