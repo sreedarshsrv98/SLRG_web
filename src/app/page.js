@@ -1,5 +1,6 @@
+import HomePage from "./components/Home";
 
-import Register from './components/RegisterMobile';
+
 
 export default function Home() {
   return (
@@ -7,7 +8,7 @@ export default function Home() {
     
     
       <main className="pt-[70px] "> 
-      <Register/>
+      <HomePage/>
       </main>
     </>
   );

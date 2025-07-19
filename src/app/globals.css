@@ -47,6 +47,11 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 575px) {
+  .home-card{
+    width: 100% !important;
+  }
+}
 @media (max-width: 640px) {
   .mobile-center {
     display: flex;
