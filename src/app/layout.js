@@ -4,17 +4,19 @@ import "./globals.css";
 import "./components/fonts.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
+import ReduxProvider from "@/redux/ReduxProvider";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="bg-[#EBFFEF] w-full mx-auto">
-        <div className="mb-15">
-          <Header />
-        </div>
-        <div className="mt-40">{children}</div>
+        <ReduxProvider>
+          <div className="mb-15">
+            <Header />
+          </div>
+          <div className="mt-40">{children}</div>
 
-        <Footer />
+          <Footer />
+        </ReduxProvider>
       </body>
     </html>
   );

@@ -8,6 +8,13 @@ export const MobileValidationSchema = Yup.object({
  
 });
 
+export const OtpValidationSchema = Yup.object({
+
+
+  otp: Yup.string()
+    .matches(/^\d{4}$/, 'OTP must be exactly 4 digits')
+    .required('OTP is required'),
+});
 
 export const RegisterStep1Validation = Yup.object({
   companyName: Yup.string()

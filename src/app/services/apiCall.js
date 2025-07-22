@@ -1,37 +1,58 @@
-
+// utils/axios.js or wherever your Axios config is
 import axios from "axios";
-import { Base_Url } from "./base_url";
+import { API_URL } from "../config";
 
-export const apiCall = async (method, endPoint, data = null, params = null, is_formdata = false) => {
-  const headers = {
-    "Content-Type": is_formdata ? "multipart/form-data" : "application/json",
-    Authorization: "Bearer " + localStorage.getItem("token"),
-  };
+axios.defaults.baseURL = API_URL;
 
-  const url = Base_Url + endPoint;
+axios.interceptors.request.use(
+    (config) => {
+        if (typeof window !== 'undefined') {
+            const token = JSON.parse(localStorage.getItem("token"));
+            if (token?._id) {
+                config.headers["token"] = token._id; 
+            }
+        }
+        config.withCredentials = true; 
+        return config;
+    },
+    (error) => Promise.reject(error)
+);
 
-  try {
-    const res = await axios({
-      method,
-      url,
-      params,
-      data,
-      headers,
-    });
-
-    return {
-      status: true,
-      message: res.data.message || "Success",
-      data: res.data,
-    };
-  } catch (error) {
-    if (error?.response?.status === 401) {
-      localStorage.removeItem("token");
-      localStorage.removeItem("refreshToken");
-    //   window.location.href = "/login";
+// API functions
+const post = async (url, data) => {
+    try {
+        const response = await axios.post(url, data);
+        return response.data;
+    } catch (err) {
+        return Promise.reject(err.response?.data || err.message);
     }
-
-    const message = error?.response?.data?.message || error.message || "Something went wrong";
-    throw { status: false, message };
-  }
 };
+
+const put = async (url, data) => {
+    try {
+        const response = await axios.put(url, data);
+        return response.data;
+    } catch (err) {
+        return Promise.reject(err.response?.data || err.message);
+    }
+};
+
+const get = async (url) => {
+    try {
+        const response = await axios.get(url);
+        return response.data;
+    } catch (err) {
+        return Promise.reject(err.response?.data || err.message);
+    }
+};
+
+const del = async (url) => {
+    try {
+        const response = await axios.delete(url);
+        return response.data;
+    } catch (error) {
+        return Promise.reject(error.response?.data || error.message);
+    }
+};
+
+export { get, post, put, del };

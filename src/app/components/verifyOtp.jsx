@@ -1,13 +1,13 @@
 "use client";
 import RegisterLeftContent from "./ragister/ragisterforms";
 import React, { useEffect, useState } from 'react';
-import RegisterVerifyOtp from "./ragister/registerverifyOtp";
+import LoginVerifyOtp from "./ragister/loginverifyOtp";
 
 export default function VerifyOtp() {
   const [bgImage, setBgImage] = useState('none');
    useEffect(() => {
     if (typeof window !== 'undefined') {
-      // Set background image only if screen is >= 640px
+
       if (window.innerWidth >= 640) {
         setBgImage("url('/bg_circle.svg')");
       }
@@ -32,7 +32,7 @@ export default function VerifyOtp() {
           {/* Right Column - 5/12 */}
           <div className="w-full md:w-4/12 p-4 flex  mt-4 md:mt-0 ">
             <div className="max-w-sm mx-auto text-center">
-              <RegisterVerifyOtp />
+              <LoginVerifyOtp />
             </div>
           </div>
           <div className="flex flex-wrap justify-center gap-4 px-4 md:hidden">
