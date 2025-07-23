@@ -44,9 +44,14 @@ body {
 
 @media (max-width: 640px) {
   .flex.flex-col {
-    align-items: center;
+    align-items: left !important;
   }
 }
+/* @media (max-width: 640px) {
+  .footer-content {
+    align-items: left !important;
+  }
+} */
 @media (max-width: 575px) {
   .home-card{
     width: 100% !important;

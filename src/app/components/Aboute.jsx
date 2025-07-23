@@ -9,7 +9,7 @@ function Aboute() {
     <div className="p-3 rounded">
       <div className="w-[347.44px] h-[337px] rounded-[9.49px] bg-[#03912314] opacity-100 flex items-center justify-center mx-auto">
         <img
-          src="/swachhata-leaf-rating-booklet-1 1.svg"
+          src="/swachhata-leaf-rating-booklet.svg"
           alt="Descriptive alt text"
           className="w-full h-full object-cover rounded-[9.49px]"
         />

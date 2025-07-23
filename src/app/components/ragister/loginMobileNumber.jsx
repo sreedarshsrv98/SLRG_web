@@ -5,7 +5,8 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { MobileValidationSchema } from '@/app/utils/ValidationSchema';
 import { useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation'
-import { sendMobileNUmber } from '@/redux/slices/authSlice'; 
+import { sendMobileNUmber } from '@/redux/slices/authSlice';
+
 
 
 
@@ -15,8 +16,10 @@ export default function RegisterMobileNumber() {
   const router = useRouter();
 
   const handleSubmit = async (values, { setSubmitting }) => {
+
     try {
-      const res = await dispatch(sendMobileNUmber(values.mobile));
+      console.log(values,"ssssssssssssssssssssss")
+     const res = await dispatch(sendMobileNUmber({ mobile: values.mobile }));
       console.log(res,"resresresresresresresresresresresresresresresresresresresresresresres")
       if (res?.payload?.success) {
         router.push('/verifyotp');

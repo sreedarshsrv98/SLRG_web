@@ -23,7 +23,7 @@ export default function RegisterVerifyOtp() {
 console.log(res,"ssssssssssssssssssssssssssssssssssss")
             if (res?.payload?.success) {
 
-                localStorage.setItem("token", res.payload.token);
+                localStorage.setItem("token", res.payload.data);
                 localStorage.setItem("refreshToken", res.payload.refreshToken);
 
 

@@ -1,8 +1,9 @@
 // src/redux/slices/authSlice.js
 
+import { post } from '@/app/services/apiCall';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import Cookies from 'js-cookie';
-import { post } from '@/app/services/apiCall'; 
+
 
 const isAuthenticated = Cookies.get('isAuthenticated') === 'true';
 
@@ -20,15 +21,19 @@ const initialState = {
 // 🔁 Send Mobile Number
 export const sendMobileNUmber = createAsyncThunk(
   "login/mobile",
-  async (mobile, { rejectWithValue }) => {
+  async ({ mobile }, { rejectWithValue }) => {
     try {
+      console.log("mobile inside thunk:", mobile); // Debug log
       const response = await post(`webApp/institute/login`, { mobile });
       return response;
     } catch (error) {
+      console.error("Login API error:", error);
       return rejectWithValue(error?.message || "Something went wrong");
     }
   }
 );
+
+
 
 // 🔐 Verify OTP
 export const verifyOtp = createAsyncThunk(
