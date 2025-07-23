@@ -2,11 +2,12 @@
 'use client';
 
 
-import React, { useState } from 'react';
+import { getDistrictsApi } from './registerapiCall';
+import React, { useState, useEffect } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { RegisterStep1Validation, RegisterStep2Validation } from '@/app/utils/ValidationSchema';
-import { CloudCog } from 'lucide-react';
-
+// import { CloudCog } from 'lucide-react';
+import { useQuery } from '@tanstack/react-query';
 
 
 
@@ -15,6 +16,12 @@ export default function NewRegisterFormDetails() {
   const [step, setStep] = useState(1);
   const [formData, setFormData] = useState({});
 
+ const { data: districtOptions = [], isLoading, isError } = useQuery({
+    queryKey: ['districts'],
+    queryFn: getDistrictsApi,
+  });
+  
+  
   const handleFinalSubmit = (values) => {
     const combinedData = { ...formData, ...values };
     console.log('Merged data for API:', combinedData);
@@ -53,38 +60,23 @@ export default function NewRegisterFormDetails() {
               }}
             >
               {({ isSubmitting }) => (
+
+
+
+
                 <Form className="flex flex-col space-y-6 items-center">
-                  {[
-                    { name: 'companyName', placeholder: 'Name of Company' },
-                    { name: 'mobile', placeholder: 'Mobile Number' },
-                    { name: 'email', placeholder: 'Email' },
-                  ].map((field) => (
-                    <div key={field.name} className="w-[300px]">
-                      <Field
-                        type="text"
-                        name={field.name}
-                        placeholder={field.placeholder}
-                        className="flex-grow min-w-0 w-full sm:max-w-[18rem] rounded-md px-4 py-3 text-base font-semibold text-gray-800 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 border border-green-700/20"
-                      />
-                      <ErrorMessage
-                        name={field.name}
-                        component="div"
-                        className="text-red-500 text-sm mt-1 text-center"
-                      />
-                    </div>
-                  ))}
+
+
 
                   {[
                     {
-                      name: 'companyType',
-                      label: 'Company Type',
-                      options: ['Hospitality', 'Educational', 'Commercial'],
-                    },
-                    {
                       name: 'district',
                       label: 'District',
-                      options: ['District A', 'District B', 'District C'],
+                      options: districtOptions?.length
+                        ? districtOptions
+                        : ['Loading...'],
                     },
+
                     {
                       name: 'localbody',
                       label: 'Local Body',
@@ -111,6 +103,28 @@ export default function NewRegisterFormDetails() {
                       />
                     </div>
                   ))}
+
+                  {[
+                    { name: 'companyName', placeholder: 'Name of Company' },
+                    { name: 'mobile', placeholder: 'Mobile Number' },
+                    { name: 'email', placeholder: 'Email' },
+                  ].map((field) => (
+                    <div key={field.name} className="w-[300px]">
+                      <Field
+                        type="text"
+                        name={field.name}
+                        placeholder={field.placeholder}
+                        className="flex-grow min-w-0 w-full sm:max-w-[18rem] rounded-md px-4 py-3 text-base font-semibold text-gray-800 placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-green-500 border border-green-700/20"
+                      />
+                      <ErrorMessage
+                        name={field.name}
+                        component="div"
+                        className="text-red-500 text-sm mt-1 text-center"
+                      />
+                    </div>
+                  ))}
+
+
 
                   <button
                     type="submit"
@@ -200,7 +214,7 @@ export default function NewRegisterFormDetails() {
         </div>
       </div>
 
- 
+
 
     </>
 

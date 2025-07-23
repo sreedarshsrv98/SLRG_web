@@ -12,8 +12,8 @@ export default function NewRegisterForm() {
       className="mx-auto mt-4 w-full max-w-[1380px] px-4 sm:px-6 lg:px-8 bg-no-repeat bg-cover min-h-[600px]"
       style={{
         backgroundImage: "url('/bg_circle.svg')",
-        backgroundPosition: 'calc(100% - 26%) calc(100% - 0%)', 
-        backgroundSize: '30%', 
+        backgroundPosition: 'calc(100% - 26%) calc(100% - 0%)',
+        backgroundSize: '30%',
       }}
     >
 
@@ -45,9 +45,9 @@ export default function NewRegisterForm() {
             >
               <div className="flex flex-col items-center">
                 <img src={icon} alt={label} className="w-8 h-8 mb-2" />
-              <div className="text-[16px] leading-[25px] font-bold text-center mb-1 text-[#5A5A5A] font-mulish">
-  {label}
-</div>
+                <div className="text-[16px] leading-[25px] font-bold text-center mb-1 text-[#5A5A5A] font-mulish">
+                  {label}
+                </div>
 
                 <div className="text-[18px] font-bold font-mulish text-[#039123]">{count}</div>
               </div>
